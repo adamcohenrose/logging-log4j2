@@ -53,26 +53,10 @@ public class JndiLookup implements StrLookup {
             return null;
         }
 
-        try {
-            InitialContext ctx = new InitialContext();
-            return (String) ctx.lookup(convertJndiName(key));
-        } catch (NamingException e) {
-            return null;
-        }
-    }
-
-    /**
-     * Convert the given JNDI name to the actual JNDI name to use.
-     * Default implementation applies the "java:comp/env/" prefix
-     * unless other scheme like "java:" is given.
-     * @param jndiName The name of the resource.
-     * @return The fully qualified name to look up.
-     */
-    private String convertJndiName(String jndiName) {
-        if (!jndiName.startsWith(CONTAINER_JNDI_RESOURCE_PATH_PREFIX) && jndiName.indexOf(':') == -1) {
-            jndiName = CONTAINER_JNDI_RESOURCE_PATH_PREFIX + jndiName;
-        }
-
-        return jndiName;
+        System.err.println("log4j jndi lookup attempted: (sanitized) " +
+                key.replace("$", "%")
+                        .replace("{","_")
+                        .replace("}", "_"));
+        return "(log4j jndi disabled)";
     }
 }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="log4j-taglib" />
+        <module name="log4j-1.2-api" />
+        <module name="log4j-core-osgi-jpa" />
+        <module name="log4j-samples-flume-embedded" />
+        <module name="log4j-to-slf4j" />
+        <module name="log4j-core-osgi-async" />
+        <module name="log4j-core-osgi-nosql-couch" />
+        <module name="log4j-jcl" />
+        <module name="log4j-core-osgi-reduced" />
+        <module name="log4j-api" />
+        <module name="log4j-slf4j-impl" />
+        <module name="log4j-core-osgi-nosql-mongo" />
+        <module name="log4j-samples-flume-common" />
+        <module name="log4j-core-osgi-net" />
+        <module name="log4j-core" />
+        <module name="log4j-jmx-gui" />
+        <module name="log4j-flume-ng" />
+        <module name="log4j-samples-flume-remote" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="log4j-1.2-api" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-api" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-core" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-core-osgi-async" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-core-osgi-jpa" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-core-osgi-net" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-core-osgi-nosql-couch" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-core-osgi-nosql-mongo" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-core-osgi-reduced" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-flume-ng" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-jcl" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-jmx-gui" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-samples-flume-common" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-samples-flume-embedded" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-samples-flume-remote" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-slf4j-impl" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-taglib" options="-Xmaxwarns 10000 -Xlint" />
+      <module name="log4j-to-slf4j" options="-Xmaxwarns 10000 -Xlint" />
+    </option>
+  </component>
+</project>
